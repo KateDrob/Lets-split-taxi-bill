@@ -177,7 +177,7 @@ select {
     }
 
     .trip-row, .people-row {
-        width: 275px;
+        width: 310px;
     }
 
     .picture {
@@ -191,14 +191,14 @@ select {
     }
 
     .taxi {
-        width: 300px;
-        left: 20px;
+        width: 310px;
+        left: 30px;
     }
 
     .money {
-        width: 90px;
-        top: -20px;
-        left: 150px;
+        width: 100px;
+        top: -10px;
+        left: 260px;
     }
 
     h1 {
@@ -219,48 +219,3 @@ select {
         width: 100%;
     }
 }
-/* 
-@media all and (max-width: 800px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-tab {
-        order: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .data-tab {
-        order: 1;
-        width: 100%;
-    }
-
-    .trip-row, .people-row {
-        width: 670px;
-    }
-
-    .picture {
-        margin-top: 30px;
-    }
-
-    .background {
-        align-self: center;
-    }
-
-    .taxi {
-        left: 100px;
-    }
-
-    .money {
-        width: 150px;
-        top: -30px;
-        left: 380px;
-    }
-
-    .billDivided, .tipDivided, .totalDivided {
-        width: 190px;
-        margin: 5px;
-    }
-} */
