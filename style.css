@@ -1,0 +1,266 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.taxi {
+    width: 550px;
+    transform: rotate(7deg);
+    position: relative;
+}
+
+.background {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 128, 0, 0.582);
+    border-radius: 30px;
+    position: absolute;
+}
+
+.money {
+    width: 200px;
+    position: relative;
+    left: 230px;
+    top: -30px;
+    transform: rotate(4deg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin-top: auto;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Neucha', cursive;
+}
+
+.data-tab {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.trip-row {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 85px;
+    background-color: #FAFCC2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+.people-row {
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    width: 550px;
+    background-color: #FAFCC2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+.tip-row {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.count-row {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.btn-add-tip {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #f3ad4ac2;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+#btn-calculate {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.582);
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Neucha', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #351c01d8;
+    margin-top: 40px;
+}
+
+select {
+    display: none;
+}
+
+#tip {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f3ad4ac2;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.billDivided, .tipDivided, .totalDivided {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    background-color: #FAFCC2;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+.billDividedToShow, .tipDividedToShow, .totalDividedToShow {
+    font-size: 20px;
+}
+
+
+@media all and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-tab {
+        order: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data-tab {
+        order: 1;
+        width: 100%;
+    }
+
+    .trip-row, .people-row {
+        width: 275px;
+    }
+
+    .picture {
+        margin-top: 50px;
+    }
+
+    .background {
+        width: 300px;
+        height: 150px;
+        align-self: center;
+    }
+
+    .taxi {
+        width: 300px;
+        left: 20px;
+    }
+
+    .money {
+        width: 90px;
+        top: -20px;
+        left: 150px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .billDivided, .tipDivided, .totalDivided {
+        width: 60px;
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .btn-add-tip {
+        width: 100%;
+    }
+
+    #btn-calculate {
+        width: 100%;
+    }
+}
+/* 
+@media all and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-tab {
+        order: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .data-tab {
+        order: 1;
+        width: 100%;
+    }
+
+    .trip-row, .people-row {
+        width: 670px;
+    }
+
+    .picture {
+        margin-top: 30px;
+    }
+
+    .background {
+        align-self: center;
+    }
+
+    .taxi {
+        left: 100px;
+    }
+
+    .money {
+        width: 150px;
+        top: -30px;
+        left: 380px;
+    }
+
+    .billDivided, .tipDivided, .totalDivided {
+        width: 190px;
+        margin: 5px;
+    }
+} */

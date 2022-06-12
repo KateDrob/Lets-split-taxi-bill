@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="data-tab">
+            <form">
+                <div class="trip-row">
+                <p class="name">Стоимость поездки</p>
+                <input id="bill" type="text" placeholder="Введите сумму...">
+                </div>
+
+                <div class="people-row">
+                    <p class="name">Количество пассажиров</p>
+                    <input id="people" type="text" placeholder="Введите число...">
+                </div>
+
+                <div class="tip-row">
+                    <button class="btn-add-tip">Добавить чаевые водителю</button>
+                    <select id="tip">
+                        <option value="0.20">20%</option>
+                        <option value="0.15">15%</option>
+                        <option value="0.10">10%</option>
+                        <option value="0.05">5%</option>
+                        <option selected value="0.00">Без чаевых</option>
+                    </select>
+                </div>
+
+                <div class="count-row">
+                    <button id="btn-calculate">Рассчитать</button>
+                </div>
+            </form>
+
+            <div class="result">
+                <div class="billDivided">
+                    <p>Сумма с 1 человека</p>
+                    <p class="billDividedToShow"></p>
+                </div>
+
+                <div class="tipDivided">
+                    <p>Чаевые с 1 человека</p>
+                    <p class="tipDividedToShow"></p>
+                </div>
+
+                <div class="totalDivided">
+                    <p>Итого с 1 человека</p>
+                    <p class="totalDividedToShow"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-tab">
+            <h1>Давай разделим счет за такси!</h1>
+            <div class="picture">
+                <div class="background"></div>
+                <img class="taxi" src="car-remove.png" alt="">
+                <img class="money" src="money.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
